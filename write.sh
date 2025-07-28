@@ -13,8 +13,8 @@ input_file=$(find . -maxdepth 1 -type f -iname "preview_${file_prefix}*" -print 
 
 # Check if the file was found
 if [ -z "$input_file" ]; then
-    echo "No file found that starts with '$file_prefix'. Please try again."
-    exit 1
+echo "No file found that starts with '$file_prefix'. Please try again."
+exit 1
 fi
 
 # Get the first word of the input file name for output file naming
